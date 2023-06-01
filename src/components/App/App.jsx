@@ -64,6 +64,11 @@ class App extends Component {
         <Filter value={filter} onChange={this.handleFilterChange} />
 
         <ContactList contacts={filteredContacts} onDeleteContact={this.deleteContact} />
+
+        <h2>Designed by Emmanuel S Giraldo 
+
+          
+        </h2>
       </div>
     );
   }
