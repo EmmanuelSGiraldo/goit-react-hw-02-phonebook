@@ -8,11 +8,14 @@ class ContactList extends Component {
 
     return (
       <ul className={styles.contactList}>
-        {contacts.map((contact) => (
+        {contacts.map(contact => (
           <li key={contact.id} className={styles.contactItem}>
             <span className={styles.contactName}>{contact.name}: </span>
             <span className={styles.contactNumber}>{contact.number}</span>
-            <button onClick={() => onDeleteContact(contact.id)} className={styles.deleteButton}>
+            <button
+              onClick={() => onDeleteContact(contact.id)}
+              className={styles.deleteButton}
+            >
               Delete
             </button>
           </li>
@@ -33,4 +36,4 @@ ContactList.propTypes = {
   onDeleteContact: PropTypes.func.isRequired,
 };
 
-export default ContactList ;
+export default ContactList;

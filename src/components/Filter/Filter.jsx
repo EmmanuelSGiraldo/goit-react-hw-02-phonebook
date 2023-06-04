@@ -9,7 +9,12 @@ class Filter extends Component {
     return (
       <label className={styles.filter}>
         Filter contacts by name:
-        <input type="text" value={value} onChange={onChange} className={styles.input} />
+        <input
+          type="text"
+          value={value}
+          onChange={onChange}
+          className={styles.input}
+        />
       </label>
     );
   }
