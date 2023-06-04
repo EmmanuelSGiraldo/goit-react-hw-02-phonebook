@@ -2,11 +2,32 @@
 .app {
   width: 600px;
   min-height: 500px;
-  background: rgb(235, 233, 233);
   max-width: 600px;
   margin: 50px auto;
   padding: 20px;
   text-align: center;
+  border-radius: 5px;
+  background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+background-size: 400% 400%;
+animation: gradient 6s ease infinite;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+border-radius: 5px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  
 
   h1 {
     margin-bottom: 20px;
@@ -18,4 +39,4 @@
     margin-bottom: 10px;
     font-size: 18px;
   }
-}
+
